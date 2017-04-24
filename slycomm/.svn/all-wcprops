@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/ilkash/DefOnline/!svn/ver/44/slycomm
+END
+CommPort.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ilkash/DefOnline/!svn/ver/1/slycomm/CommPort.cpp
+END
+Comm.res
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ilkash/DefOnline/!svn/ver/1/slycomm/Comm.res
+END
+Comm.tds
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ilkash/DefOnline/!svn/ver/44/slycomm/Comm.tds
+END
+CommPort.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ilkash/DefOnline/!svn/ver/1/slycomm/CommPort.h
+END
+EvRead.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ilkash/DefOnline/!svn/ver/1/slycomm/EvRead.cpp
+END
+ThRead.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ilkash/DefOnline/!svn/ver/1/slycomm/ThRead.cpp
+END
+COMMPORT.RES
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ilkash/DefOnline/!svn/ver/1/slycomm/COMMPORT.RES
+END
+EvRead.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ilkash/DefOnline/!svn/ver/1/slycomm/EvRead.h
+END
+ThRead.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ilkash/DefOnline/!svn/ver/1/slycomm/ThRead.h
+END
+EvStatus.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ilkash/DefOnline/!svn/ver/1/slycomm/EvStatus.cpp
+END
+ThStatus.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ilkash/DefOnline/!svn/ver/1/slycomm/ThStatus.cpp
+END
+EvStatus.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ilkash/DefOnline/!svn/ver/1/slycomm/EvStatus.h
+END
+ThStatus.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ilkash/DefOnline/!svn/ver/1/slycomm/ThStatus.h
+END
+Comm.bpk
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ilkash/DefOnline/!svn/ver/1/slycomm/Comm.bpk
+END
+Comm.map
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ilkash/DefOnline/!svn/ver/1/slycomm/Comm.map
+END
+Comm.bpl
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ilkash/DefOnline/!svn/ver/44/slycomm/Comm.bpl
+END
+ThWrite.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ilkash/DefOnline/!svn/ver/1/slycomm/ThWrite.cpp
+END
+Comm.cbproj
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ilkash/DefOnline/!svn/ver/1/slycomm/Comm.cbproj
+END
+Comm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ilkash/DefOnline/!svn/ver/1/slycomm/Comm.cpp
+END
+ThWrite.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ilkash/DefOnline/!svn/ver/1/slycomm/ThWrite.h
+END

@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 44
+*.local
+Debug_Build
+Release_Build
+__history
+
+END

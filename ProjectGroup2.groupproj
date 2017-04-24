@@ -1,0 +1,48 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{BB86DB3A-DDD9-4DCB-B7E1-A9F08D8197F0}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="Defectoscope.cbproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="\\THICKNESS\Thickness_new\Thickness.cbproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="Defectoscope">
+			<MSBuild Projects="Defectoscope.cbproj"/>
+		</Target>
+		<Target Name="Defectoscope:Clean">
+			<MSBuild Projects="Defectoscope.cbproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Defectoscope:Make">
+			<MSBuild Projects="Defectoscope.cbproj" Targets="Make"/>
+		</Target>
+		<Target Name="Thickness">
+			<MSBuild Projects="\\THICKNESS\Thickness_new\Thickness.cbproj"/>
+		</Target>
+		<Target Name="Thickness:Clean">
+			<MSBuild Projects="\\THICKNESS\Thickness_new\Thickness.cbproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Thickness:Make">
+			<MSBuild Projects="\\THICKNESS\Thickness_new\Thickness.cbproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="Defectoscope;Thickness"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="Defectoscope:Clean;Thickness:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="Defectoscope:Make;Thickness:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>
