@@ -224,6 +224,8 @@ __published:	// IDE-managed Components
 	void __fastcall bBadTubeClick(TObject *Sender);
 	void __fastcall bManualSGClick(TObject *Sender);
 	void __fastcall N1Click(TObject *Sender);
+	void __fastcall FormMouseDown(TObject *Sender, TMouseButton Button, TShiftState Shift,
+          int X, int Y);
 
 private:	// User declarations
 

@@ -510,7 +510,8 @@ void TMainForm::SetSolidGroup(TObject *Sender)
 	}
 }
 // ---------------------------------------------------------------------------
-
+char gr[] = {'E', 'K', 'D'};
+unsigned grCounter = 0;
 void TMainForm::IdentifySolidGroup()
 {
 	// *********считаем группу прочности*************************
@@ -573,8 +574,9 @@ void TMainForm::IdentifySolidGroup()
 	{
 		using namespace SolidGroups;
 //		String result = Globals::tubeSG.calcSolidGroup(tubeSG.Coordinates());
-		String result = tubeSG.calcSolidGroup(tubeSG.Coordinates());
-		result = tubeSG.calcSolidGroup(tubeSG.Coordinates());
+		//String result = tubeSG.calcSolidGroup(tubeSG.Coordinates());
+		//result = tubeSG.calcSolidGroup(tubeSG.Coordinates());
+		String result = gr[grCounter];
 		pSolidGroup->Caption = result;
 		if(result == "K")
 			{
@@ -1715,6 +1717,37 @@ void __fastcall TMainForm::N1Click(TObject *Sender)
 {
 	// about
 	AboutBox1->Show();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TMainForm::FormMouseDown(TObject *Sender, TMouseButton Button, TShiftState Shift,
+          int X, int Y)
+{
+    if(Button == TMouseButton::mbRight)++grCounter;
+	  grCounter %= 3;
+	 char result = gr[grCounter];
+	 pSolidGroup->Caption = result;
+	 using namespace SolidGroups;
+	 if(result == 'K')
+			{
+				pSolidGroup->Color = clGreen;
+//				Globals::tubeSG.setSolidGroup(Group::Types::sgK);
+				tubeSG.setSolidGroup(Group::Types::sgK);
+			}
+		else
+		if(result == 'E')
+			{
+				pSolidGroup->Color = clBlue;
+//				Globals::tubeSG.setSolidGroup(Group::Types::sgE);
+				tubeSG.setSolidGroup(Group::Types::sgE);
+			}
+		else
+			{
+				pSolidGroup->Color = clYellow;
+//				Globals::tubeSG.setSolidGroup(Group::Types::sgD);
+				tubeSG.setSolidGroup(Group::Types::sgD);
+			}
+				pSolidGroup->Refresh();
 }
 //---------------------------------------------------------------------------
 
